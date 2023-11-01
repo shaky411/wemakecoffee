@@ -1,7 +1,7 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Strip from "@/components/Strip";
-import BottomStrip from "@/components/bottomStrip";
+import BottomStrip from "@/components/BottomStrip";
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
 
