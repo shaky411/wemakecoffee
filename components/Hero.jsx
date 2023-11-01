@@ -9,10 +9,10 @@ export default function Hero() {
             <h1 className="font-semibold text-4xl md:text-7xl text-laurel-200 tracking-tight">
               WEMAKECOFFEE™
             </h1>
-            <h5 className="text-2xl font-extralight tracking-tight sm:text-5xl sm:leading-none text-gray-200">
+            <h5 className="text-2xl sm:font-extralight tracking-tight sm:text-5xl sm:leading-none text-gray-200">
               Making great coffee since 1984.
             </h5>
-            <p className="w-1/1 md:w-1/2 text-slate-200 dark:text-slate-200 md:text-lg">
+            <p className="w-1/1 md:w-1/2 text-slate-200 md:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
               maxime!s
             </p>

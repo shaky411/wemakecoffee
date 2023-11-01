@@ -3,9 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import coffeeUK from "../public/assets/coffeeUK.webp"
-import fairTrade from "../public/assets/fairTrade.png"
-
+import coffeeUK from "../public/assets/coffeeUK.webp";
+import fairTrade from "../public/assets/fairTrade.png";
 
 // Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,31 +13,22 @@ import "@fortawesome/free-brands-svg-icons";
 
 // Components
 
-
 // Icons
-import {
-  faXmark,
-  faBars
-} from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 
-export default function Nav() {
+export default function NewNav() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <div>
-      <nav className="fixed shadow-lg bg-opacity-90 dark:bg-opacity-90  mx-auto top-0 left-0 right-0 z-30 bg-laurel-200 dark:bg-slate-900 duration-500">
+    <main>
+      <div className="fixed shadow-lg bg-opacity-90 dark:bg-opacity-90  mx-auto top-0 left-0 right-0 z-30 bg-laurel-200 dark:bg-slate-900 duration-500">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between md:block">
               {/* LOGO */}
               <div>
                 <Link href="/" className="flex items-center py-4 px-2">
-                  {/* <img
-                    src="./assets/Gray Gecko-02-test_dark.svg"
-                    alt="Gecko Logo"
-                    className="h-11 w-11 mr-2"
-                  /> */}
+                 
                   <span className="font-semibold text-laurel-700 dark:text-slate-200 text-2xl">
                     WeMakeCoffee™
                   </span>
@@ -63,8 +53,9 @@ export default function Nav() {
               </div>
             </div>
           </div>
-          <div>
 
+          
+          <div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? "p-12 md:p-0 block" : "hidden"
@@ -87,44 +78,23 @@ export default function Nav() {
                   </Link>
                 </li>
 
-                
-                
                 {/* Mobile Menu Items */}
-                
-                <div className="flex space-x-3 justify-center md:hidden mt-10">
-                  
-                  
-                  
-                  
-                </div>
-                
-                <div className="flex flex-col justify-center items-center space-y-4 md:hidden">
-                {/* <Image src={geckoLogo} alt="" width={50} /> */}
-              <span>WeMakeCoffee™ &copy; 2023</span>
-              <div className="flex gap-5">
-                <Image 
-                src={fairTrade}
-                alt=""
-                width={50}
-                />
-                <Image 
-                src={coffeeUK}
-                alt=""
-                width={50}
-                />
 
-              </div>
+                {/* <div className="flex space-x-3 justify-center md:hidden mt-10"></div> */}
+
+                <div className="flex flex-col justify-center items-center space-y-4 my-5 md:hidden">
+                  {/* <Image src={geckoLogo} alt="" width={50} /> */}
+                  <span>WeMakeCoffee™ &copy; 2023</span>
+                  <div className="flex gap-5">
+                    <Image src={fairTrade} alt="" width={50} />
+                    <Image src={coffeeUK} alt="" width={50} />
+                  </div>
                 </div>
               </ul>
-        
-              
             </div>
-            
           </div>
-          
         </div>
-      </nav>
-      
-    </div>
+      </div>
+    </main>
   );
 }

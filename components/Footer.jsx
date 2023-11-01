@@ -59,16 +59,7 @@ export default function Footer() {
             <div className="flex flex-col gap-5 text-slate-200">
               <h5 className="text-2xl text-green-400">About Us</h5>
               <p>We make amazing coffee!</p>
-            </div>
-            <div className="flex flex-col gap-5 text-slate-200">
-              <h5 className="text-2xl text-green-400">Contact</h5>
-              <Link href="/Contact">
-                <p className="hover:text-blue-500 duration-300">
-                  Have a question? Send us a message, here.
-                </p>
-              </Link>
-            </div>
-            <div className="flex flex-col gap-5 text-slate-200">
+              <div className="flex flex-col gap-5 text-slate-200">
               <h5 className="text-2xl text-green-400">Links</h5>
               <div className="flex gap-5">
                 <Link href="/">
@@ -127,6 +118,16 @@ export default function Footer() {
                   Website designed by GrayGecko
                 </Link>
             </div>
+            </div>
+            <div className="flex flex-col gap-5 text-slate-200">
+              <h5 className="text-2xl text-green-400">Contact</h5>
+              <Link href="/Contact">
+                <p className="hover:text-blue-500 duration-300">
+                  Have a question? Send us a message, here.
+                </p>
+              </Link>
+            </div>
+            
             
           </div>
         </div>
