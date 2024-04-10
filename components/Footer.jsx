@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="grid lg:grid-cols-4 gap-4 md:grid-cols-2 grid-cols-1 p-20">
             <div className="flex flex-col gap-5 text-slate-200">
               <h5 className="text-2xl text-green-400">Company</h5>
-              <span>WeMakeCoffee™ &copy; 2023</span>
+              <span>WeMakeCoffee™ &copy; 2024</span>
               <Link
                 href="https://goo.gl/maps/pGoQGpQAoPzZ8FKQ7"
                 target="_blank"
@@ -121,7 +121,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-5 text-slate-200">
               <h5 className="text-2xl text-green-400">Contact</h5>
-              <Link href="/Contact">
+              <Link href="#contact-page">
                 <p className="hover:text-blue-500 duration-300">
                   Have a question? Send us a message, here.
                 </p>

@@ -13,7 +13,7 @@ import {
 
 export default function About() {
   return (
-    <main className="bg-laurel-200">
+    <main className="bg-laurel-200" id="about-section">
       <section className="max-w-5xl py-20 mx-auto px-8">
         <div className="flex flex-col justify-center items-center space-y-3 mb-10 text-center">
         <FontAwesomeIcon

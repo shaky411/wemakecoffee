@@ -68,12 +68,12 @@ export default function NewNav() {
                   </Link>
                 </li>
                 <li className="text-lg mx-3 sm:text-slate-600 sm:dark:text-slate-400 hover:text-slate-100 md:hover:text-slate-800 md:hover:dark:text-slate-200 text-center md:hover:border-b rounded md:rounded-none hover:bg-indigo-500 md:border-green-400 py-4 md:py-0 md:hover:bg-transparent">
-                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#about-section" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link>
                 </li>
                 <li className="text-lg mx-3 sm:text-slate-600 sm:dark:text-slate-400 hover:text-slate-100 md:hover:text-slate-800 md:hover:dark:text-slate-200 text-center md:hover:border-b rounded md:rounded-none hover:bg-indigo-500 md:border-green-400 py-4 md:py-0 md:hover:bg-transparent">
-                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#contact-page" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
                 </li>

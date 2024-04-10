@@ -14,7 +14,7 @@ export default function Home() {
       <Strip />
       <BottomStrip />
       <Banner />
-      {/* <Contact /> */}
+      <Contact />
       <About />
     </main>
   )
