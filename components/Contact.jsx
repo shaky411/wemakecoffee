@@ -27,8 +27,8 @@ export default function Contact() {
       className="flex flex-col md:flex-row justify-center items-center gap-10 p-10 md:p-20 border-t max-w-5xl mx-auto"
       id="contact-page"
     >
-      <div className="flex flex-col w-1/2 gap-5">
-        <h2 className="text-5xl font-semibold tracking-tight text-laurel-600">
+      <div className="flex flex-col md:w-1/2 gap-5">
+        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-laurel-600">
           Contact Us
         </h2>
         <p>
@@ -36,7 +36,7 @@ export default function Contact() {
         </p>
 
         <div>
-        <h3 className="text-blue-500 text-2xl">wemakecoffee@coffee.com</h3>
+        <h3 className="text-blue-500 md:text-2xl">wemakecoffee@coffee.com</h3>
       </div>
       </div>
 
