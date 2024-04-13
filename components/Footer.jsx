@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-import fairLogo from "../public/assets/fairTrade.png"
-import coffeeUK from "../public/assets/coffeeUK.webp"
+import fairLogo from "../public/assets/fairTrade.png";
+import coffeeUK from "../public/assets/coffeeUK.webp";
 
 import {
   faGithub,
@@ -43,81 +43,18 @@ export default function Footer() {
                 Bristol | London | Bath
               </Link>
               <div className="flex gap-5">
-              <Image 
-              src={fairLogo}
-              alt="fair trade coffee logo"
-              width={70}
-              />
-              <Image 
-              src={coffeeUK}
-              alt="Coffee association logo"
-              width={70}
-              />
+                <Image src={fairLogo} alt="fair trade coffee logo" width={70} />
+                <Image
+                  src={coffeeUK}
+                  alt="Coffee association logo"
+                  width={70}
+                />
               </div>
-              
             </div>
             <div className="flex flex-col gap-5 text-slate-200">
               <h5 className="text-2xl text-green-400">About Us</h5>
               <p>We make amazing coffee!</p>
-              <div className="flex flex-col gap-5 text-slate-200">
-              <h5 className="text-2xl text-green-400">Links</h5>
-              <div className="flex gap-5">
-                <Link href="/">
-                  <FontAwesomeIcon
-                    icon={faHome}
-                    className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
-                  />
-                </Link>
-                <Link
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
-                  />
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/marcnorris1984"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
-                  />
-                </Link>
-                <Link
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
-                  />
-                </Link>
-                <Link
-                  href="https://github.com/shaky411"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
-                  />
-                </Link>
-              </div>
-              <Link
-                  href="https://www.graygecko.co.uk"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className="hover:text-blue-500"
-                >
-                  Website designed by GrayGecko
-                </Link>
-            </div>
+              
             </div>
             <div className="flex flex-col gap-5 text-slate-200">
               <h5 className="text-2xl text-green-400">Contact</h5>
@@ -126,9 +63,68 @@ export default function Footer() {
                   Have a question? Send us a message, here.
                 </p>
               </Link>
+
+              
             </div>
-            
-            
+            <div className="flex flex-col gap-5 text-slate-200">
+                <h5 className="text-2xl text-green-400">Links</h5>
+                <div className="flex gap-5">
+                  <Link href="/">
+                    <FontAwesomeIcon
+                      icon={faHome}
+                      className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
+                    />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
+                    />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/marcnorris1984"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
+                    />
+                  </Link>
+                  <Link
+                    href="https://twitter.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <FontAwesomeIcon
+                      icon={faTwitter}
+                      className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
+                    />
+                  </Link>
+                  <Link
+                    href="https://github.com/shaky411"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="text-2xl hover:text-pink-500 hover:scale-110 duration-300"
+                    />
+                  </Link>
+                </div>
+                <Link
+                  href="https://www.graygecko.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="hover:text-blue-500"
+                >
+                  Website designed by GrayGecko
+                </Link>
+              </div>
           </div>
         </div>
       </div>

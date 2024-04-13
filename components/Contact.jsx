@@ -1,10 +1,6 @@
 "use client"
 
 import { Input, Textarea } from "@nextui-org/react";
-
-import Link from "next/link";
-import Image from "next/image";
-import coffee from "../public/assets/beans.jpg";
 import { useState } from "react";
 
 export default function Contact() {
@@ -18,7 +14,7 @@ export default function Contact() {
     setEmail("")
     setMessage("")
 
-    alert("message sent")
+    alert("message sent") 
     
   }
 
@@ -28,7 +24,7 @@ export default function Contact() {
       id="contact-page"
     >
       <div className="flex flex-col md:w-1/2 gap-5">
-        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-laurel-600">
+        <h2 className="text-5xl font-semibold tracking-tight text-laurel-600">
           Contact Us
         </h2>
         <p>
@@ -40,7 +36,7 @@ export default function Contact() {
       </div>
       </div>
 
-    <div className="md:w-1/2 bg-laurel-200 p-10 rounded-lg w-full">
+    <div className="md:w-1/2 bg-sun-800 p-10 rounded-lg w-full">
       <form onSubmit={handleSubmit} className="space-y-4">
     <Input isRequired type="email" label="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
     <Textarea
@@ -51,7 +47,7 @@ export default function Contact() {
       value={message}
       onChange={(e) => setMessage(e.target.value)}
     />
-    <button className="bg-laurel-500 text-white px-4 py-2 hover:opacity-50 duration-500" type="submit">Submit</button>
+    <button className="bg-sun-500 text-white px-4 py-2 hover:opacity-50 duration-500 rounded w-full" type="submit">Submit</button>
       </form>
     </div>
       
